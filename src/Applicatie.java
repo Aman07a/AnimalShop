@@ -74,12 +74,16 @@ public class Applicatie {
 			dier = hond2;
 		} else if (Antwoord.equals("kat")) {
 			Kat kat2 = new Kat();
+			System.out.println("Je hebt " + kat2 + " ingevuld");
 			dier = kat2;
 		} else  {
 			Vogel vogel2 = new Vogel();
+			System.out.println("Je hebt " + vogel2 + " ingevuld");
 			dier = vogel2;
 		}
 		
 		dier.maakGeluid();
+		dier.Eten();
+		dier.Slapen();
 	}
 }
